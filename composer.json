@@ -1,0 +1,22 @@
+{
+    "name": "mrtcltkgl/sozluk",
+    "description": "The Content module for Yii framework.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "sozluk"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mert Çeltikoğlu",
+            "email": "mrtceltikoglu@gmail.com"
+        }
+    ],
+	"minimum-stability": "stable",
+	"require": {
+		"yiisoft/yii2": "*"
+	},
+    "autoload": {
+        "psr-4": {
+            "mrtcltkgl\\sozluk\\": ""
+        }
+    }
+}
