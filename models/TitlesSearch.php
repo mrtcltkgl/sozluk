@@ -5,7 +5,7 @@ namespace mrtcltkgl\sozluk\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\modules\sozluk\models\Titles;
+use mrtcltkgl\sozluk\models\Titles;
 
 /**
  * TitlesSearch represents the model behind the search form about `backend\modules\sozluk\models\Titles`.
