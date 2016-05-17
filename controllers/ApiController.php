@@ -5,6 +5,6 @@ use yii\rest\ActiveController;
 
 class ApiController extends ActiveController
 {
-	public $modelClass ='backend\modules\sozluk\models\Messages';
+	public $modelClass ='mrtcltkgl\sozluk\models\Messages';
 
 }
