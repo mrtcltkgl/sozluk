@@ -24,12 +24,14 @@ Daha sonra:<br>
 2- Tekrar projenin kurulu olduğu dizine gelerek proje içerisinde <b>console/controllers</b> dizininde bulunan script dosyasını alarak Yii2.0'ın kurulu olduğu dizindeki <b>console>controllers</b> içerisine kopyalayalım.<br>
 3- Tüm bu kopyalama işlemlerini bitirdikten sonra artık bu dosyaları komut satırı yardımıyla çalıştıralım ve yetki işlemlerimizi oluşturmuş olalım. Bu ayarlamalar için gerekli komutlar aşağıdaki şekildedir:<br>
 a->İlk olarak Yii2'nin kurulu olduğu klasördeki <b>../common/config/main-local.php</b> script dosyasını herhangi bir metin düzenleyici ile açalım. Ve components kısmına aşağıdaki kodu ekleyelim.<br>
-&emsp;	....<br>
+	....<br>
 &emsp;	'authManager' => [<br>
 &emsp;&emsp;            'class' => 'yii\rbac\DbManager',<br>
 &emsp;        ],<br>
-&emsp;       ....<br>
+        ....<br>
+b->Şimdi komut ekranını açalım. Yii2 projemizin kurulu olduğu dizine gidelim(komut ekranında). İlk olarak <b>yii rbac/init</b> komutunu çalıştıralım ve Rbac ayarlamalarımızı belirlemiş olarak. Kuralları eklemek için ise <b>yii rbac/author-rule</b> komutunu çalıştıralım. Tüm bunlardan sonra veritabanını incelediğimizde bizim için 4 tane yetkilendirme tablosu eklendiğini göreceğiz.<br>
 
+<b>NOT:</b>Daha önce DB Manager yapılandırması yapmadıysanız, <b>yii migrate --migrationPath=@yii/rbac/migrations</b> komutunu aktif hale getirmemiz gerekmektedir. <br>
 	
 Kuruluma Hazırlık
 -----------------
@@ -37,17 +39,17 @@ Kuruluma Hazırlık
 ..<b>Composer.json</b>..<br>
 ...<br>
 "source": "https://github.com/yiisoft/yii2"<br>
-    },<br>
-    "minimum-stability": "stable",<br>
-    "require": {<br>
-        "php": ">=5.4.0",<br>
-        "yiisoft/yii2": ">=2.0.6",<br>
-        "yiisoft/yii2-bootstrap": "*",<br>
-        "yiisoft/yii2-swiftmailer": "*",<br>
-		<b>"mrtcltkgl/sozluk": "dev-master" // Eklenen satır.</b><br>
-    },<br>
-    "require-dev": {<br>
-        "yiisoft/yii2-codeception": "*",<br>
+&emsp;    },<br>
+&emsp;    "minimum-stability": "stable",<br>
+&emsp;    "require": {<br>
+&emsp;&emsp;        "php": ">=5.4.0",<br>
+&emsp;&emsp;        "yiisoft/yii2": ">=2.0.6",<br>
+&emsp;&emsp;        "yiisoft/yii2-bootstrap": "*",<br>
+&emsp;&emsp;        "yiisoft/yii2-swiftmailer": "*",<br>
+&emsp;&emsp;		<b>"mrtcltkgl/sozluk": "dev-master" // Eklenen satır.</b><br>
+&emsp;    },<br>
+&emsp;    "require-dev": {<br>
+&emsp;&emsp;        "yiisoft/yii2-codeception": "*",<br>
 ...<br>
 ...<br><br>
 
@@ -55,11 +57,11 @@ Kuruluma Hazırlık
 
 ..<b>Main-local.php</b>..<br>
 ...<br>
-	'modules'=>[<br>
-		'sozluk'=>[<br>
-			'class' =>'mrtcltkgl\sozluk\Sozluk',<br>
-		],	<br>
-	],<br>
+&emsp;	'modules'=>[<br>
+&emsp;&emsp;		'sozluk'=>[<br>
+&emsp;&emsp;			'class' =>'mrtcltkgl\sozluk\Sozluk',<br>
+&emsp;&emsp;		],	<br>
+&emsp;	],<br>
 ...<br>
 ...<br>
 
