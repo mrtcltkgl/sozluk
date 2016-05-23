@@ -1,7 +1,7 @@
 Yii 2.0 ile geliştirilmiş sözlük uygulamasının yazı modülü
 ----------------------------------------------------------
 
-Uygulama'yı çalıştırabilmek için ilk olarak bilgisayarınızda [Yii Advanced Sürümü](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/README.md) ve [Composer](https://getcomposer.org/download/) yüklü olması gerekmektedir. Yii kütüphanesi PHP üzerinde çalışan bir kütüphane olması nedeniyle bilgisayarınızda herhangi bir sanal sunucu uygulamasından yararlanabilirsiniz. Ben kendi uygulamamı geliştirirken [XAMPP](https://www.apachefriends.org/tr/download.html) uygulamasından yardım alındı.
+Uygulama'yı çalıştırabilmek için ilk olarak bilgisayarınızda [Yii Advanced Sürümü](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/README.md) ve [Composer](https://getcomposer.org/download/) yüklü olması gerekmektedir. Yii kütüphanesi PHP üzerinde çalışan bir kütüphane olması nedeniyle bilgisayarınızda herhangi bir sanal sunucu uygulamasından yararlanabilirsiniz. Bu uygulama geliştirilirken [XAMPP](https://www.apachefriends.org/tr/download.html) uygulamasından yardım alındı.
 
 Tüm bunlardan sonra uygulamayı çalıştırabilmek için ilk olarak proje dosyası içinde belirtilen sql yapısında veri veritabanına sahip olmanız gerekmektedir.
 
