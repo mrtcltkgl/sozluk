@@ -24,11 +24,11 @@ Daha sonra:<br>
 2- Tekrar projenin kurulu olduğu dizine gelerek proje içerisinde <b>console/controllers</b> dizininde bulunan script dosyasını alarak Yii2.0'ın kurulu olduğu dizindeki <b>console>controllers</b> içerisine kopyalayalım.<br>
 3- Tüm bu kopyalama işlemlerini bitirdikten sonra artık bu dosyaları komut satırı yardımıyla çalıştıralım ve yetki işlemlerimizi oluşturmuş olalım. Bu ayarlamalar için gerekli komutlar aşağıdaki şekildedir:<br>
 a->İlk olarak Yii2'nin kurulu olduğu klasördeki <b>../common/config/main-local.php</b> script dosyasını herhangi bir metin düzenleyici ile açalım. Ve components kısmına aşağıdaki kodu ekleyelim.<br>
-&emsp;	....
-&emsp;	'authManager' => [
-&emsp;&emsp;            'class' => 'yii\rbac\DbManager',
-&emsp;        ],
- &emsp;       ....
+&emsp;	....<br>
+&emsp;	'authManager' => [<br>
+&emsp;&emsp;            'class' => 'yii\rbac\DbManager',<br>
+&emsp;        ],<br>
+&emsp;       ....<br>
 
 	
 Kuruluma Hazırlık
