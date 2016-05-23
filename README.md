@@ -12,14 +12,24 @@ VT İçeriği
 	Kurulumla gelenler: user - migration</br>
 	Yetkilendirmede kullanılanlar: auth_assignment - auth_item - auth_item_child - auth_rule</br>
 	Gerekli olanlar: messages - tags - titles</br>
+<b>Migration Yapılandırmaları ile Veritabanı Kurulumu</b><br>
+Github proje dosyasında bulunan Migrations isimli klasör içeriğini, kendi Yii2 projenizin kurulu olduğu konumda ..\console\migrations adlı dizine kopyalayınız. Daha sonra komut satırı yardımıyla yii2'nin kurulu olduğu dizine erişelim. Bu dizine eriştikten sonra <b> Yii migrate</b> komutunu çalıştıralım. Bu komut çalıştıktan sonra veritabanı projenin kullanımı için hazır hale gelmiş olacaktır.<br>
 	
-Kopyalanması Gerekenler
+Kopyalanması Gerekenler(Rbac Yetkilendirme İşlemleri)
 -----------------------
 Veritabanı işlemleri tamamlandıktan sonra proje içerisindeki dökümanlardan olan yetki tabanlı işlemlerin gerçekleştirildiği 2 temel dosyamızı yii2.0 dosyamızın içerisinde ilgili alanlara kopyalamamız gerekmektedir.<br>
 İlk olarak yii2.0 projenin kurulu olduğu dizini açalım.<br>
 Daha sonra:<br>
 1- Proje içinde bulunan <b>common/rbac</b> adlı dosyayı yii2.0'ın yüklü olduğu dizin içerisinde <b>common</b> alt dizini içerisinde <b>rbac</b> isimli klasör oluşturup bu dosyayı buraya atalım.<br>
-2- Tekrar projenin kurulu olduğu dizine gelerek proje içerisinde <b>console/controllers</b> dizininde bulunan script dosyasını alarak Yii2.0'ın kurulu olduğu dizindeki <b>console>controllers</b> içerisine kopyalayalım.
+2- Tekrar projenin kurulu olduğu dizine gelerek proje içerisinde <b>console/controllers</b> dizininde bulunan script dosyasını alarak Yii2.0'ın kurulu olduğu dizindeki <b>console>controllers</b> içerisine kopyalayalım.<br>
+3- Tüm bu kopyalama işlemlerini bitirdikten sonra artık bu dosyaları komut satırı yardımıyla çalıştıralım ve yetki işlemlerimizi oluşturmuş olalım. Bu ayarlamalar için gerekli komutlar aşağıdaki şekildedir:<br>
+a->İlk olarak Yii2'nin kurulu olduğu klasördeki <b>../common/config/main-local.php</b> script dosyasını herhangi bir metin düzenleyici ile açalım. Ve components kısmına aşağıdaki kodu ekleyelim.<br>
+&emsp;	....
+&emsp;	'authManager' => [
+&emsp;&emsp;            'class' => 'yii\rbac\DbManager',
+&emsp;        ],
+ &emsp;       ....
+
 	
 Kuruluma Hazırlık
 -----------------
