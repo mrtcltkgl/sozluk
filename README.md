@@ -14,6 +14,9 @@ VT İçeriği
 	Gerekli olanlar: messages - tags - titles</br>
 <b>Migration Yapılandırmaları ile Veritabanı Kurulumu</b><br>
 Github proje dosyasında bulunan Migrations isimli klasör içeriğini, kendi Yii2 projenizin kurulu olduğu konumda <b>..\console\migrations</b> adlı dizine kopyalayınız. Daha sonra komut satırı yardımıyla yii2'nin kurulu olduğu dizine erişelim. Bu dizine eriştikten sonra <b> Yii migrate</b> komutunu çalıştıralım. Bu komut çalıştıktan sonra veritabanı projenin kullanımı için hazır hale gelmiş olacaktır.<br>
+<b>Öncelik sıralaması:</b> Etiket>Başlık>Yorum <br>
+
+<b>NOT:</b> Kurulum ile birlikte gelen user tablosu bilgisayarınızda bulunduğu kabul edilmiştir.<br>
 	
 Kopyalanması Gerekenler(Rbac Yetkilendirme İşlemleri)
 -----------------------
