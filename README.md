@@ -13,7 +13,7 @@ VT İçeriği
 	Yetkilendirmede kullanılanlar: auth_assignment - auth_item - auth_item_child - auth_rule</br>
 	Gerekli olanlar: messages - tags - titles</br>
 <b>Migration Yapılandırmaları ile Veritabanı Kurulumu</b><br>
-Github proje dosyasında bulunan Migrations isimli klasör içeriğini, kendi Yii2 projenizin kurulu olduğu konumda ..\console\migrations adlı dizine kopyalayınız. Daha sonra komut satırı yardımıyla yii2'nin kurulu olduğu dizine erişelim. Bu dizine eriştikten sonra <b> Yii migrate</b> komutunu çalıştıralım. Bu komut çalıştıktan sonra veritabanı projenin kullanımı için hazır hale gelmiş olacaktır.<br>
+Github proje dosyasında bulunan Migrations isimli klasör içeriğini, kendi Yii2 projenizin kurulu olduğu konumda <b>..\console\migrations</b> adlı dizine kopyalayınız. Daha sonra komut satırı yardımıyla yii2'nin kurulu olduğu dizine erişelim. Bu dizine eriştikten sonra <b> Yii migrate</b> komutunu çalıştıralım. Bu komut çalıştıktan sonra veritabanı projenin kullanımı için hazır hale gelmiş olacaktır.<br>
 	
 Kopyalanması Gerekenler(Rbac Yetkilendirme İşlemleri)
 -----------------------
@@ -68,6 +68,13 @@ Kuruluma Hazırlık
 <b>3- </b> Tüm bu işlemler sonucunda uygulama kuruluma hazır hale gelecektir. Burdan sonra tek yapmanız gereken aşağıdaki kodlar yardımıyla kurulumu gerçekleştirmek ve sonuç kısmında belirtilen açıklamaları okumak.<br>
 
 Kurulum için Yii2.0'ın kurulu olduğu dizine komut satırında ulaşalım. Eğer daha önce kurulum yaptıksak önce <b>composer clear-cache</b> ile ön belleği temizleyelim. Eğer kurulum yapmadıysa veya ön bellek temizleme işlemini tamamladıysak <b>composer update</b> yardımıyla uygulama kurulumuna başlayabilirsiniz. Bu işlem 4-5 dakika sürmektedir.<br>
+
+Frontend yapılandırmaları
+-------------------------
+<br>Proje dökümanı içerisinde yer alan Frontend klasöründe 2 adet script dosyası bulunmaktadır. Biri controller diğeri ise view. Controller dosyası vendor içerisindeki mesaj modelinden bilgileri çekmektedir. Aşağıdaki talimatları takip ederek gerekli kopyalama işlemlerini gerçekleştirebilirsiniz.<br>
+<b>a-></b>frontend/controllers altindaki <b>MessagesController.php</b> dosyasını <b>"..\frontend\controllers"</b> dizinine kopyalayınız.<br>
+<b>b-></b>frontend/views/messages klasörünü <b>"..\frontend\views"</b> altına kopyalayınız.<br>
+
 
 Sonuç
 -----
