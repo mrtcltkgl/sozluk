@@ -4,7 +4,7 @@ namespace frontend\controllers;
 
 use yii\db\Query;
 use yii\data\ActiveDataProvider;
-use backend\modules\sozluk\models\Messages;
+use mrtcltkgl\sozluk\models\Messages;
 
 class MessagesController extends \yii\web\Controller
 {
