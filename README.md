@@ -93,11 +93,29 @@ Sonuç
 <b>* </b>Uygulamanın işleyişi şu şekildedir. Yönetici sözlük'te konuşulacak etiketleri belirler. Bu etiketler ile ilgili başlıklar açılır. Başlıklara mesajlar bırakılır. Bu sayede sözlük içi basit bir mesaj sistemi kurulmuş olur.<br>
 
 <b><u>Sayfalara Erişim:</u></b><br>
-<u>Etiket İşlemleri:</u>sozluk/tags<br>
-<u>Başlık İşlemleri:</u>sozluk/titles<br>
-<u>Mesaj İşlemleri:</u>sozluk/messages<br>
-<u>Restful:</u>sozluk/api<br>
-<u>Frontend Erişim:</u>frontend/messages/message-display<br>
+<table>
+<tr>
+	<td>Etiket İşlemleri:</td>
+	<td>sozluk/tags</td>
+</tr>
+<tr>
+	<td>Başlık İşlemleri:</td>
+	<td>sozluk/titles</td>
+</tr>
+<tr>
+	<td>Mesaj İşlemleri:</td>
+	<td>sozluk/tags</td>
+</tr>
+<tr>
+	<td>Restful:</td>
+	<td>sozluk/api</td>
+</tr>
+<tr>
+	<td>Frontend Erişim:</td>
+	<td>frontend/messages/message-display</td>
+</tr>
+</table>
+
 
 
 
