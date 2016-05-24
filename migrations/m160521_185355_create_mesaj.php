@@ -30,7 +30,7 @@ $this->createTable('messages', [
 
         // add foreign key for table `user`
         $this->addForeignKey(
-            'fk-user_id',
+            'fk-user_id-message',
             'messages',
             'user_id',
             'user',
