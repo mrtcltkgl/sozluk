@@ -90,7 +90,14 @@ Sonuç
 <b>Yazar:</b> Başlık ve mesaj oluşturur ve sadece kendi oluşturdularını silip güncelleyebilir.<br>
 
 <b>* </b>Giriş yapmayan kişi veritabanı ile ilgili işlemlerin hiçbirini gerçekleştiremez.<br>
-<b>* </b>Uygulamanın işleyişi şu şekildedir. Yönetici sözlük'te konuşulacak etiketleri belirler. Bu etiketler ile ilgili başlıklar açılır. Başlıklara mesajlar bırakılır. Bu sayede sözlük içi basit bir mesaj sistemi kurulmuş olur.
+<b>* </b>Uygulamanın işleyişi şu şekildedir. Yönetici sözlük'te konuşulacak etiketleri belirler. Bu etiketler ile ilgili başlıklar açılır. Başlıklara mesajlar bırakılır. Bu sayede sözlük içi basit bir mesaj sistemi kurulmuş olur.<br>
+
+<b><u>Sayfalara Erişim:</u></b><br>
+<i>Etiket İşlemleri:</i>sozluk/tags<br>
+<i>Başlık İşlemleri:</i>sozluk/titles<br>
+<i>Mesaj İşlemleri:</i>sozluk/messages<br>
+<i>Restful:</i>sozluk/api<br>
+<i>Frontend Erişim:</i>frontend/messages/message-display<br>
 
 
 
