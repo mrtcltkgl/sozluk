@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use mrtcltkglsozluk\models\Titles;
+use mrtcltkgl\sozluk\models\Titles;
 
 /* @var $this yii\web\View */
 /* @var $model backend\modules\sozluk\models\Messages */
